@@ -8,7 +8,10 @@ module.exports = {
     coverageDirectory: "coverage",
     testEnvironment: "jsdom",
     transform: {
-        "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",
+        "^.+\\.(js|jsx|ts|tsx)$": [
+            "babel-jest",
+            { configFile: "./babel.config.testing.js" },
+        ],
     },
 
     coveragePathIgnorePatterns: [

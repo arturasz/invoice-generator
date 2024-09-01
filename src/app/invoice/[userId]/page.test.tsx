@@ -1,7 +1,7 @@
 import { describe, expect, test } from "@jest/globals";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 
-import Invoice from "./invoice";
+import Invoice from "./page";
 
 describe("Package", () => {
   /* test("shoud", () => {
